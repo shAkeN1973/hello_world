@@ -1,0 +1,13 @@
+<--index.html-->
+<button
+bindtap="change_color">change_the_background</button>
+<!-- wx:if-->
+<block wxif-"{{b==true}}">
+    <view
+    class="bg_green"></view>
+</block>
+<block 
+wx:elif="{{b==false}}">
+<view
+class="bg_blue"></view>
+</block>
