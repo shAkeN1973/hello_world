@@ -1,12 +1,12 @@
 var person=
 {
     firstName:'john',
-    lastNamae:'Smith',
+    lastName:'Smith',
     switchName: function (x,y) {
         this.firstName=x;
-        this.lastNamae=y;
+        this.lastName=y;
     }
 };
 
 person.switchName('ma','boyu');
-console.log(person.firstName,person.lastNamae);
+console.log(person.firstName,person.lastName);
