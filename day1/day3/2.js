@@ -2,16 +2,18 @@ function creatFunctions(){
     var result= new Array();
     for(var i=0;i<10;i++)
     {
-        result[i]=function(num){ //creat an another anoumous function to make the function work
-            return function(){
-                return num;
-            };
-        }(i);
+        result[i]=function(){ //creat an another anoumous function to make the function work
+            console.log(i);
+                return i;
+        };
     }
+    
     return result;
+    
 }
 
 var test1=creatFunctions();
+alert(test1[1]);
 
 for(var i=0;i<test1.length;i++)
 {
