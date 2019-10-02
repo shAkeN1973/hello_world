@@ -9,3 +9,8 @@ Page({
         })
     }
 })
+
+var myFuntion=document.getElementsByTagName('button');
+myFuntion.onmousover=function(){
+    alert('succeed');
+};
