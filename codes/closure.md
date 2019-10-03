@@ -45,6 +45,7 @@ for(var i=0;i<fucn1.length;i++)
 ```
 上面的函数中，在执行完`var fucn1=cFunction();`后，里面包含的实际上是匿名函数function（对象）在进行`fucn1[i]();`后匿名函数才会被执行，但此时匿名函数的作用域链中包含了cFucntion的变量对象，其中i=10，因此只会输出10个i
 改进方法：
+```
 function cFunction()
 {
     var result= new Array();
@@ -66,3 +67,4 @@ for(var i=0;i<fucn1.length;i++)
 {
     document.write(fucn1[i]()+'<br />');
 }
+```
